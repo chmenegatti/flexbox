@@ -225,7 +225,7 @@ div.wrapper-content aside.profile ul {
 
 }
 
-div.wrapper-content aside.profile li {
+div.wrapper-content aside.profile ul.list li {
   font-size: 14px;
   color: #657786;
   display: flex;
@@ -233,10 +233,254 @@ div.wrapper-content aside.profile li {
   margin-top: 5px;
 }
 
-div.wrapper-content aside.profile li:first-child {
+div.wrapper-content aside.profile ul.list li:first-child {
   margin-top: 0;
 }
-div.wrapper-content aside.profile li img{
+div.wrapper-content aside.profile ul.list li img{
   margin-right: 10px;
   
+}
+
+div.wrapper-content aside.profile .widget {
+  margin-top: 20px;
+}
+
+div.wrapper-content aside.profile .widget strong {
+  font-weight: normal;
+  color: #3bb9e3;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+div.wrapper-content aside.profile .widget strong img {
+  margin-right: 5px;
+}
+
+div.wrapper-content aside.profile .followers ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.wrapper-content aside.profile .followers ul li {
+  width: 45px;
+  height: 45px;
+  background: #667580;
+  border-radius: 50%;
+  flex: 1 0 auto;
+  margin: 0 5px 10px 0; 
+
+}
+
+div.wrapper-content aside.profile .images ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.wrapper-content aside.profile .images ul li {
+  width: 80px;
+  height: 80px;
+  background: #667580;
+  border-radius: 3%;
+  flex: 1 0 auto;
+  margin: 0 5px 5px 0; 
+
+}
+
+div.wrapper-content .timeline {
+  flex: 1;
+  background: #fff;
+  margin: 10px 20px 0;
+}
+
+div.wrapper-content .timeline nav{
+  border-bottom: 1px solid #ccd6dd;
+  padding: 10px 15px;
+}
+
+div.wrapper-content .timeline nav a { 
+  color: #3bb9e3;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+div.wrapper-content .timeline nav a:first-child { 
+  margin-left: 0;
+}
+
+div.wrapper-content .timeline nav a.active { 
+  color: #1f2226;
+}
+
+div.wrapper-content .timeline ul.tweets { 
+  list-style: none;
+}
+
+div.wrapper-content .timeline ul.tweets li{ 
+  border-bottom: 1px solid #ccd6dd;
+  padding: 10px 15px;
+  display: flex;
+}
+
+div.wrapper-content .timeline ul.tweets li > img{ 
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+div.wrapper-content .timeline ul.tweets li .info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong {
+  font-size: 14px;
+  color: #1f2226;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong span{
+  font-weight: normal;
+  font-size: 13px;
+  color: #3bb9e3;
+}
+
+div.wrapper-content .timeline ul.tweets li .info p {
+  font-size: 14px;
+  color: #1f2226;
+  margin-top: 5px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions {
+  display: flex;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #657786;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a:first-child {
+  margin-left: 0;
+}
+div.wrapper-content .timeline ul.tweets li .actions a img{
+  margin-right: 5px;
+}
+
+div.wrapper-content aside.widgets {
+  width: 290px;
+  margin-top: 10px;
+}
+
+div.wrapper-content aside.widgets .widget {
+  background: #fff;
+  padding: 15px;
+}
+
+div.wrapper-content aside.widgets .widget .title {
+  display: flex;
+  align-items: baseline;
+  
+}
+
+div.wrapper-content aside.widgets .widget .title strong {
+  font-size: 18px;
+  color: #1f2226
+}
+
+div.wrapper-content aside.widgets .widget .title a {
+  font-size: 12px;
+  color: #3bb9e3;
+  text-decoration: none;
+  position: relative;
+  padding-left: 10px;
+}
+div.wrapper-content aside.widgets .widget .title a::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #111;
+  position: absolute;
+  left: 4px;
+  top: 6px;
+}
+
+div.wrapper-content aside.widgets .follow ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+div.wrapper-content aside.widgets .follow ul li{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccd6dd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+div.wrapper-content aside.widgets .follow ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+div.wrapper-content aside.widgets .follow ul li .profile{
+  display: flex;
+  align-items: center;
+}
+
+div.wrapper-content aside.widgets .follow ul li .profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+div.wrapper-content aside.widgets .follow ul li .profile .info { 
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrapper-content aside.widgets .follow ul li .profile .info strong {
+  font-size: 14px;
+  color: #1f2226;
+}
+
+div.wrapper-content aside.widgets .follow ul li .profile .info strong span {
+  font-weight: normal;
+  color: #9a9a9a;
+}
+
+div.wrapper-content aside.widgets .follow ul li .profile .info button {
+  height: 27px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3bb9e3;
+  border: 1px solid #3bb9e3;
+  background: #f5f8fa;
+  border-radius: 16px;
+  margin-right: 20px;
+  margin-top: 4px;
+}
+
+div.wrapper-content aside.widgets .follow ul li > a {
+  color: #3bb9e3;
+  text-decoration: none;
+  font-size: 14px;
 }
